@@ -1,6 +1,4 @@
-package org.codingTest;
-
-import java.util.*;
+package org.codingTest.simulation;
 
 class LoseDog {
     public int solution(int[][] board){

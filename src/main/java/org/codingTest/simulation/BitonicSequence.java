@@ -1,4 +1,4 @@
-package org.codingTest;
+package org.codingTest.simulation;
 
 import java.util.ArrayList;
 
