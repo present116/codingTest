@@ -41,16 +41,15 @@ public class UnzipString {
 
         for(String x : st)
             answer += x;
-
         return answer;
     }
 
     public static void main(String[] args){
         UnzipString T = new UnzipString();
         System.out.println(T.solution("3(a2(b))ef"));
-        //System.out.println(T.solution("2(ab)k3(bc)"));
-        //System.out.println(T.solution("2(ab3((cd)))"));
-        //System.out.println(T.solution("2(2(ab)3(2(ac)))"));
-        //System.out.println(T.solution("3(ab2(sg))"));
+        System.out.println(T.solution("2(ab)k3(bc)"));
+        System.out.println(T.solution("2(ab3((cd)))"));
+        System.out.println(T.solution("2(2(ab)3(2(ac)))"));
+        System.out.println(T.solution("3(ab2(sg))"));
     }
 }
