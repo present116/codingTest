@@ -20,7 +20,7 @@ public class CpuScheduling {
 
         while(!programs.isEmpty() || !pq.isEmpty()) {
             if(pq.isEmpty())
-                fT = Math.max(fT, programs.peek()[0]);
+                fT = Math.max(fT, programs.peek()[0]); // peek : 스택의 가장 위에 있는 항목을 반환한다.
             while(!programs.isEmpty() && programs.peek()[0] <= fT) {
                 int[] x = programs.pollFirst();
                 pq.add(new int[]{x[1], x[2]});
