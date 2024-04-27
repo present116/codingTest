@@ -8,6 +8,14 @@ public class NearBigInt {
     int[] ch;
     boolean flag;
     public void DFS(int L, int number){
+        System.out.println("start ! -> " + L + ", " + number);
+        System.out.println("---------------");
+        for(int n : ch) {
+            System.out.println("n>>" + n);
+        }
+        System.out.println("---------------");
+
+
         if(flag) return;
         if(L == m){
             if(number > target){
@@ -19,6 +27,7 @@ public class NearBigInt {
             for(int i = 0; i < m; i++){
                 if(ch[i] == 0){
                     ch[i] = 1;
+                    System.out.println("i>>" + i);
                     DFS(L + 1, number * 10 + nums.get(i));
                     ch[i] = 0;
                 }
@@ -48,9 +57,9 @@ public class NearBigInt {
     public static void main(String[] args){
         NearBigInt T = new NearBigInt();
         System.out.println(T.solution(123));
-        System.out.println(T.solution(321));
-        System.out.println(T.solution(20573));
-        System.out.println(T.solution(27711));
-        System.out.println(T.solution(54312));
+        //System.out.println(T.solution(321));
+        //System.out.println(T.solution(20573));
+        //System.out.println(T.solution(27711));
+        //System.out.println(T.solution(54312));
     }
 }
